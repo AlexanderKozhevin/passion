@@ -52,13 +52,13 @@
       enabled: true,
       requireBase: true
     });
-    $urlRouterProvider.otherwise("/passion");
+    $urlRouterProvider.otherwise("/");
     return $stateProvider.state('vod', {
-      url: '/passion',
+      url: '/',
       abstract: false,
       views: {
         layout: {
-          templateUrl: 'passion/assets/views/main.html',
+          templateUrl: '/assets/views/main.html',
           controller: 'VodCtrl'
         }
       }
