@@ -52,9 +52,9 @@
       enabled: true,
       requireBase: false
     });
-    $urlRouterProvider.otherwise("/passion");
+    $urlRouterProvider.otherwise("/passion/");
     return $stateProvider.state('vod', {
-      url: '/passion',
+      url: '/passion/',
       abstract: false,
       views: {
         layout: {
