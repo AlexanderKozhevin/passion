@@ -50,7 +50,7 @@
   angular.module('myapp').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode({
       enabled: true,
-      requireBase: true
+      requireBase: false
     });
     $urlRouterProvider.otherwise("/");
     return $stateProvider.state('vod', {
@@ -58,7 +58,7 @@
       abstract: false,
       views: {
         layout: {
-          templateUrl: '/assets/views/main.html',
+          templateUrl: '/passion/assets/views/main.html',
           controller: 'VodCtrl'
         }
       }
