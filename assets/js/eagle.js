@@ -50,7 +50,7 @@
   angular.module('myapp').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode({
       enabled: true,
-      requireBase: false
+      requireBase: true
     });
     $urlRouterProvider.otherwise("/passion/");
     return $stateProvider.state('vod', {
